@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    title Harry's Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo
+                img(src = "../static/img/logo-main.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact]
+            li: a(href="/") Help
+    
+    section#introSection 
+        div Harry's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h3 Our Mission
+        div.container
+            div.cards
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/1.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam aspernatur odio recusandae? Quibusdam dicta dolores optio expedita, atque consequuntur.
+            div.cards
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/2.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam aspernatur odio recusandae? Quibusdam dicta dolores optio expedita, atque consequuntur.
+            div.cards
+                h3 Dance Experties
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/3.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam aspernatur odio recusandae? Quibusdam dicta dolores optio expedita, atque consequuntur.
+
+    section#sponsorsSection 
+        h3 Our Sponsors
+        div#sponsors
+            a(href="/"): img(src="../static/img/logo1.png", alt="Sponsor Image", class="spImage")
+            a(href="/"): img(src="../static/img/logo2.png", alt="Sponsor Image", class="spImage")
+            a(href="/"): img(src="../static/img/logo3.png", alt="Sponsor Image", class="spImage")
+            a(href="/"): img(src="../static/img/logo4.png", alt="Sponsor Image", class="spImage")
+
+    footer#footer 
+        div#social
+            a(href="https://facebook.com/"): img(src="../static/img/FB.svg", alt="", class="social-links")
+            a(href="https://instagram.com/endless_knowledge/"): img(src="../static/img/insta.svg", alt="", class="social-links")
+            a(href="/"): img(src="../static/img/Linkedin.svg", alt="", class="social-links")
+            a(href="/"): img(src="../static/img/twitter.svg", alt="", class="social-links")
+            a(href="/"): img(src="../static/img/YT.svg", alt="", class="social-links")
+        span  &copy; All copyrights reserved. Dance With Harry Pvt Ltd. 2022.
+
+    script
+      include ../static/script.js

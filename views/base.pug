@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Harry's Dance Academy
+    link(rel="icon" href="../static/img/twitter.svg")
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul 
+            div#logo
+                img(src = "../static/img/logo-main.png")
+                | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/contact") Contact]
+            li: a(href="/help") Help
+    block content
+    footer#footer 
+        div#social
+            a(href="https://facebook.com/"): img(src="../static/img/FB.svg", alt="", class="social-links")
+            a(href="https://instagram.com/endless_knowledge/"): img(src="../static/img/insta.svg", alt="", class="social-links")
+            a(href="/"): img(src="../static/img/Linkedin.svg", alt="", class="social-links")
+            a(href="/"): img(src="../static/img/twitter.svg", alt="", class="social-links")
+            a(href="/"): img(src="../static/img/YT.svg", alt="", class="social-links")
+        span  &copy; All copyrights reserved. Dance With Harry Pvt Ltd. 2022.

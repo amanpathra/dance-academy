@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+    script
+      include ../static/script.js
+
+block style
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+        div Harry's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h3 Our Mission
+        div.container
+            div.cards
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/1.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam aspernatur odio recusandae? Quibusdam dicta dolores optio expedita, atque consequuntur.
+            div.cards
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/2.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam aspernatur odio recusandae? Quibusdam dicta dolores optio expedita, atque consequuntur.
+            div.cards
+                h3 Dance Experties
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/3.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veniam aspernatur odio recusandae? Quibusdam dicta dolores optio expedita, atque consequuntur.
+
+    section#sponsorsSection 
+        h3 Our Sponsors
+        div#sponsors
+            a(href="/"): img(src="../static/img/logo1.png", alt="Sponsor Image", class="spImage")
+            a(href="/"): img(src="../static/img/logo2.png", alt="Sponsor Image", class="spImage")
+            a(href="/"): img(src="../static/img/logo3.png", alt="Sponsor Image", class="spImage")
+            a(href="/"): img(src="../static/img/logo4.png", alt="Sponsor Image", class="spImage")
